@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>qrcode</title>
+	<script>
+		window.onload=function () {
+			var payType;
+			var userAgent = navigator.userAgent;
+			if (userAgent.indexOf("micromessenger") > 0) {
+				payType ="wxpay";
+			}else if(userAgent.indexOf("alipayclient") > 0){
+				payType ="alipay";
+			}
+
+			var storeId = getQueryString("storeId");
+			oscript.src="http:/xxxx.com/xxxx?storeId="+storeId+"&payType="+payType+"&callback=goto";
+			document.body.appendChild(oscript);
+		};
+
+		function goto(data){
+			console.log(data);
+
+			//根据data的不同链接跳转...window.location.href
+		}
+
+		function getQueryString(name){
+		   var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		   var r = window.location.search.substr(1).match(reg);
+		   if(r!=null){
+		   	return  unescape(r[2]);
+		   }else{
+		   	alert("参数错误");
+		   }
+		}
+
+	</script>
+</head>
+<body>
+</body>
+</html>
