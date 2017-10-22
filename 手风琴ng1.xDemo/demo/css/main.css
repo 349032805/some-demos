@@ -1,0 +1,27 @@
+.accordion {
+    width: 200px;
+}
+
+.accordion .title {
+    background: lightblue;
+    cursor: pointer;
+}
+
+.accordion .content {
+    background: #f1f1f1;
+    display: block;
+    transition: height 0.5s ease-out;
+    overflow: hidden;
+    height: 100px;
+}
+
+.accordion .content.ng-enter,
+.accordion .content.ng-leave.ng-leave-active {
+    display: block !important;
+    height: 0px;
+}
+
+.accordion .content.ng-leave,
+.accordion .content.ng-enter.ng-enter-active {
+    height: 100px;
+}

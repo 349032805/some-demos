@@ -1,0 +1,14 @@
+我没有给你写,直接从github上搜了一边,然后运行能用的,改成直接能运行的,发给你.
+你照着这些demo,找到index.html运行看看,然后看源代码,改成自己需要的就行了.
+
+这两个是一个比较完善的指令写的.
+https://github.com/scniro/ng-accordion
+http://ng-accordion.azurewebsites.net/examples/model-binding
+
+使用CDN资源测试(bootstrap提供的CDN):http://www.bootcdn.cn/
+
+
+最简单的应该是 AngularJS-Accordion,这个很简单,不过如果你需要过渡效果,得自己加了,研究一下ng的animate
+就行.
+
+其他的有的用自定义指令写的,比较好,这是规范的做法,你可以学习着写.

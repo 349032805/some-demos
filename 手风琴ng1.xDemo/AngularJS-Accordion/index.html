@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html ng-app="shanidkvApp">
+
+<head>
+	<title>Shanid KV | AngularJS Accordion</title>
+	<script src="https://cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row">
+
+			<h3>AngularJS Accordion</h3>
+
+			<hr/>
+			<div class="panel-group">
+
+				<div ng-init="accordion=1">
+					<div class="panel panel-default">
+						<div class="accordion panel-heading" ng-class="{active:accordion==1}">
+							<a class="panel-title" href ng-click="accordion = 1">Collapsible Group Item #1</a>
+						</div>
+						<div class="panel-collapse">
+							<p class="accordion-content panel-body" ng-show="accordion==1">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+								of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+								into electronic typesetting, remaining essentially unchanged.</p>
+						</div>
+					</div>
+
+
+					<div class="panel panel-default">
+						<div class="accordion panel-heading" ng-class="{active:accordion==2}">
+							<a class="panel-title" href ng-click="accordion = 2">Collapsible Group Item #2</a>
+						</div>
+						<div class="panel-collapse">
+							<p class="accordion-content panel-body" ng-show="accordion==2">Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="accordion panel-heading" ng-class="{active:accordion==3}">
+							<a class="panel-title" href ng-click="accordion = 3">Collapsible Group Item #3</a>
+						</div>
+						<div class="panel-collapse">
+							<p class="accordion-content panel-body" ng-show="accordion==3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+								of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+								into electronic typesetting.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

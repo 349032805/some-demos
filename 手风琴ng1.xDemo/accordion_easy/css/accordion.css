@@ -1,0 +1,16 @@
+.title{
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+.body{
+	color: black;
+	background-color: white;
+	padding: 10px;
+}
+.container{
+	width: 400px;
+	margin: 40px auto;
+	border: 2px solid black;
+	font-size: 18px;
+}

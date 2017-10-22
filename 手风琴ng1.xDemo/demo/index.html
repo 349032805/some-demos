@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Patterns - Modal</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.5.8/angular-animate.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/components/accordion/accordion.js"></script>
+</head>
+
+<body>
+    <div ng-app="app" ng-controller="HomeController as home">
+        {{home.title}}
+        <accordion>
+            <accordion-section section-title="Section A">Lorem ipsum</accordion-section>
+            <accordion-section section-title="Section B">Foo bar</accordion-section>
+            <accordion-section section-title="Section C">Hello World!</accordion-section>
+        </accordion>
+    </div>
+
+
+</body>
+
+</html>
