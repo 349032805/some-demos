@@ -1,0 +1,342 @@
+s_emp
+s_dept
+s_region 
+没有特殊说明下,名字都用first_name字段
+CORE-E-001的综合练习：	
+1.找出员工的姓中（last_name）第三个字母是a的员工名字
+  select last_name from s_emp
+  where last_name like '__a%';
+
+2.找出员工名字中含有a和e的
+  select first_name from s_emp 
+  where lower(first_name) like '%a%' 
+  and lower(first_name) like '%e%'; 
+
+  select first_name from s_emp 
+  where lower(first_name) like '%a%e%'
+  or lower(first_name) like '%e%a%';
+
+3.找出所有有提成的员工，列出名字、工资、提出，显示结果按工资从小到大，提成从小到大
+  select first_name,salary,commission_pct
+  from s_emp
+  where commission_pct is not null
+  order by salary,commission_pct;
+	
+4.42部门有哪些职位
+  select distinct title from s_emp where dept_id = 42;
+
+5.除了Sales部门还有哪些部门
+  -- distinct 去重问题
+  select distinct name from s_dept where name <> 'Sales';
+
+6.显示工资不在1000到1550之间的员工信息：名字、工资，按工资从大到小排序。
+  select first_name,salary from s_emp 
+  where salary not between 1000 and 1550
+  order by salary desc;	
+
+7.显示职位为Stock Clerk和Sales Representative，年薪在14400和17400之间的员工的信息：名字、职位、年薪。
+  --注意 and or 优先级问题
+  select first_name,title,salary*12 nianxi
+  from s_emp
+  where title in ('Stock Clerk','Sales Representative')
+  and salary*12 between 14400 and 17400;
+
+  select first_name,title,salary*12 nianxi
+  from s_emp
+  where (title ='Stock Clerk' or title = 'Sales Representative')
+  and salary*12 between 14400 and 17400;	
+
+  select first_name,title,salary*12 nianxi
+  from s_emp
+  where title ='Stock Clerk' 
+    and salary*12 between 14400 and 17400
+  or 
+     title = 'Sales Representative'
+   and salary*12 between 14400 and 17400;
+
+8.解释select id ，commission_pct from s_emp where commission_pct is null和select id ， commission_pct from s_emp where commission_pct = null的输出结果。
+  	
+9.select语句的输出结果为
+select * from s_dept;
+select * from s_emp;
+select * from s_region;
+select * from s_customer;
+……
+当前用户有多少张表，结果集有多少条记录。
+ select 'select * from '||table_name ||' ;' from user_tables;
+	
+10.判断select first_name , dept_id from s_emp where salary > '1450'是否抱错，为什么？
+	隐式数据类型转换
+
+
+CORE-E-002的综合练习：
+
+1.列出每个员工的名字，工资、涨薪后工资（涨幅为8%），元为单位进行四舍五入
+   select first_name , salary , round(salary*1.08) from s_emp;
+
+2.找出谁是最高领导，将名字按大写形式显示
+   select upper(first_name)  boss from s_emp where manager_id is null;	
+
+3.Ben的领导是谁（Ben向谁报告）。
+   select m.first_name 
+   from s_emp e join s_emp m 
+   on e.manager_id=m.id
+   and e.first_name='Ben' 
+
+  select first_name from s_emp
+  where id = (select manager_id from s_emp
+              where first_name='Ben')
+   
+4.Ben领导谁。（谁向Ben报告）。
+  select e.first_name 
+  from s_emp e join s_emp m 
+  on e.manger_id=m.id
+  and m.first_name='Ben'
+
+  select first_name from s_emp
+  where manager_id = (select id from s_emp
+                  where first_name='Ben')
+
+5.哪些员工的工资高于他直接上司的工资，列出员工的名字和工资，上司的名字和工资
+  select e.first_name,e.salary,m.first_name,m.salary
+  from s_emp e join s_emp m
+  on e.manager_id=m.id
+  and e.salary>m.salary;
+
+  select first_name,salary,
+       (select first_name from s_emp where e.manager_id = id) manager_name,
+       (select salary from s_emp where e.manager_id = id) manager_salary
+  from s_emp e
+  where salary > (select salary from s_emp where e.manager_id = id);
+
+6.哪些员工和Biri(last_name)同部门//2
+   select t1.last_name
+   from s_emp t1 join s_emp t2
+   on t1.dept_id=t2.dept_id
+   and t2.last_name='Biri'
+   --除去自己
+   and t1.last_name <>'Biri';
+ 
+   select last_name from s_emp 
+   where  last_name <> 'Biri'
+   and dept_id = (select dept_id from s_emp where last_name='Biri');
+
+7.哪些员工跟Smith(last_name)做一样职位//9
+   select t1.last_name
+   from s_emp t1 join s_emp t2
+   on t1.title=t2.title
+   and t2.last_name='Smith'
+   and t1.last_name<>'Smith'
+
+   select last_name from s_emp
+   where title=(select title from s_emp where last_name='Smith')
+   and last_name<>'Smith'
+  
+   select last_name from s_emp e
+   where exists (select title from s_emp 
+                 where last_name='Smith' 
+                 and e.title=title)
+   and last_name <>'Smith'
+
+8.哪些员工跟Biri(last_name)不在同一个部门//22
+   select last_name from s_emp
+   where dept_id <> (select dept_id from s_emp
+                 where last_name='Biri')
+ 
+   select last_name from s_emp out
+   where not exists (select 1 from s_emp
+                     where last_name='Biri'
+                     and out.dept_id=dept_id)
+
+   select e1.first_name 
+   from s_emp e1 left outer join s_emp e2 
+   on e1.dept_id = e2.dept_id and e2.last_name = 'Biri' 
+   where e2.id is null
+
+9.哪些员工跟Smith(last_name)做不一样的职位//15
+  select last_name,title from s_emp
+  where title <> (select title from s_emp
+                where last_name='Smith')
+关联子查询
+  select last_name,title from s_emp e
+  where not exists (select 1 from s_emp
+                   where last_name='Smith'
+                   and e.title=title )
+外连
+  select e1.first_name,e1.title 
+  from s_emp e1 left outer join s_emp e2 
+  on e1.title = e2.title 
+  and e2.last_name = 'Smith' 
+  where e2.id is null
+
+10.显示有提成的员工的信息：名字、提成、所在部门名称、所在地区的名称
+   select e.first_name,e.commission_pct,d.name,r.name
+   from s_emp e join s_dept d
+   on e.dept_id=d.id and e.commission_pct is not null
+   join s_region r
+   on d.region_id=r.id
+
+11.显示Operations部门有哪些职位
+    select distinct e.title 
+    from s_emp e join s_dept d
+    on e.dept_id=d.id
+    and d.name='Operations'
+
+12.整个公司中，最高工资和最低工资相差多少
+    select (max(salary)-min(salary)) from s_emp;
+
+13.提成大于0的人数
+   select count(*) from s_emp 
+   where commission_pct  > 0;
+
+   select count(commission_pct) from s_emp;
+
+14.显示整个公司的最高工资、最低工资、工资总和、平均工资，保留到整数位。
+    select max(salary),min(salary),sum(salary),round(avg(salary))
+    from s_emp;
+
+15.整个公司有多少个领导
+    select count(distinct manager_id)  manager from s_emp;
+
+16.列出在同一部门入职日期晚但工资高于其他同事的员工：名字、工资、入职日期
+   -- 6   思考为什么要去重??
+   select distinct a.first_name,a.salary,a.start_date
+   from s_emp a join s_emp b
+   on a.dept_id=b.dept_id
+   and b.start_date<a.start_date
+   and b.salary<a.salary;
+
+ CORE-E-003的综合练习：
+1.各个部门平均、最大、最小工资、人数，按照部门号升序排列
+   select dept_id,avg(salary),max(salary),min(salary),count(*) 
+   from s_emp 
+   group by dept_id 
+   order by dept_id;
+
+2.各个部门中工资大于1500的员工人数
+   select count(*),dept_id
+   from s_emp 
+   where salary>1500
+   group by dept_id	
+
+3.列出每个部门中有同样工资的员工的统计信息，列出他们的部门号，工资，人数
+  select dept_id,salary,count(*)
+  from s_emp
+  group by dept_id,salary
+  having count(*)>1;
+	
+4.该部门中工资高于1000的员工数量超过2人，列出符合条件的部门：显示部门名字、地区名称
+   select d.name,r.name 
+   from s_dept d join s_region r
+   on d.region_id=r.id
+   and d.id = (select dept_id from s_emp
+                  where salary>1000
+                  group by dept_id
+                  having count(id)>2)
+  
+5.哪些员工的工资，高于整个公司的平均工资，列出员工的名字和工资（降序）
+  select first_name,salary
+  from s_emp 
+  where salary > (select avg(salary) from s_emp)
+  order by salary desc ;
+
+6.哪些员工的工资，介于32和33部门（33高些）平均工资之间
+  select first_name from s_emp
+  where salary between (select avg(salary) from s_emp where dept_id=32) 
+              and     (select avg(salary) from s_emp where dept_id=33)
+
+7.所在部门平均工资高于1500的员工名字
+  select first_name from s_emp
+  where dept_id in (select dept_id from s_emp
+                              group by dept_id
+                              having avg(salary)>1500)
+
+8.列出各个部门中工资最高的员工的信息：名字、部门号、工资
+  select first_name , salary , dept_id 
+  from s_emp 
+   where (dept_id,salary) 
+    in  (select dept_id,max(salary) from s_emp group by dept_id)
+
+ select first_name,dept_id,salary 
+ from s_emp e
+ where salary = (select max(salary) from s_emp
+                where dept_id = e.dept_id)
+
+select e.first_name,e.salary,e.dept_id
+from s_emp e join 
+                  (select max(salary) a,dept_id
+                   from s_emp 
+                   group by dept_id ) s
+on e.salary = s.a
+and e.dept_id= s.dept_id
+
+9.最高的部门平均工资值的是多少
+   select max(avg(salary)) from s_emp
+   group by dept_id;
+
+10.哪个部门的平均工资是最高的，列出部门号、平均工资
+   select dept_id,avg(salary) 
+   from s_emp 
+   group by dept_id 
+   having avg(salary) = (select max(avg(salary)) from s_emp 
+                                     group by dept_id); 
+
+11.哪些部门的人数比32号部门的人数多
+   select dept_id,count(*)  
+   from s_emp 
+   group by dept_id 
+   having count(*) > (select count(*) from s_emp where dept_id = 32);
+
+12.Ben的领导是谁（非关联子查询）
+     select first_name from s_emp
+     where id = (select manager_id from s_emp
+                where first_name='Ben')
+
+13.Ben领导谁（非关联子查询）
+      select first_name from s_emp
+      where manager_id = (select id from s_emp
+                          where first_name = 'Ben');
+
+14.Ben的领导是谁（关联子查询）
+     select first_name from s_emp m
+     where exists (select 1 from s_emp 
+                  where manager_id=m.id
+                  and first_name = 'Ben');
+
+15.Ben领导谁（关联子查询）
+     select first_name from s_emp e
+     where exists (select 1 from s_emp
+                   where e.manager_id=id
+                   and first_name = 'Ben');
+
+16.列出在同一部门共事，入职日期晚但工资高于其他同事的员工：名字、工资、入职日期（关联子查询）
+   select first_name,salary,start_date from s_emp o 
+   where exists (select 1 from s_emp  
+                 where dept_id = o.dept_id 
+                 and o.start_date > start_date 
+                 and o.salary > salary);
+
+17.哪些员工跟Biri(last_name)不在同一个部门（非关联子查询）
+    select first_name 
+    from s_emp 
+    where dept_id not in (select dept_id 
+                         from s_emp 
+                         where last_name = 'Biri');
+
+18.哪些员工跟Biri(last_name)不在同一个部门（关联子查询）
+    select last_name from s_emp o 
+    where not exists (select 1 from s_emp i 
+                      where dept_id = o.dept_id 
+                      and last_name = 'Biri');
+
+19.Operations部门有哪些职位（非关联子查询）
+    select distinct title from s_emp 
+    where dept_id in (select id from s_dept 
+                      where name = 'Operations');
+
+20.Operations部门有哪些职位（关联子查询）
+   select distinct title from s_emp e 
+   where exists (select 1 from s_dept  
+                 where e.dept_id = id 
+                 and name =  'Operations');
+  
