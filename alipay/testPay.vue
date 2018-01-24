@@ -2,6 +2,7 @@
 <template>
     <div class="alipay">支付宝支付</div>
 </template>
+<script src="https://as.alipayobjects.com/g/component/antbridge/1.1.1/antbridge.min.js"></script>
 <script>
 export default {
   created() {
