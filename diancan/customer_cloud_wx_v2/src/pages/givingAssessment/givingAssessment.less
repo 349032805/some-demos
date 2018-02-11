@@ -1,0 +1,80 @@
+@import '../../style/mixin.less';
+.givingAssessment{
+
+
+   .anotherpage(200);
+  .fav-food{
+    padding:.6rem .6rem .4rem;
+    background:#fff;
+    font-size: .68rem;
+  }
+  >div{
+    position:absolute;
+    background:#fff;
+    left:0;
+    top:1.85rem;
+    right:0;
+    bottom:0;
+    overflow-y: scroll;
+    .zbutton-box{
+      position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px;
+    background: #FAFAFA;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 0 4px 0 rgba(51, 51, 51, 0.15)
+    }
+    ul{
+      background:#fff;
+      li{
+        background:#fff;
+        width:50%;
+        float: left;
+        text-align: center;
+        font-size: .64rem;
+        .img-box{
+          position: relative;
+          >img{
+            width:90%;
+            border-radius: 4px;
+            height:4.9rem;
+          }
+          .choose{
+            width:90%;
+            margin-left:5%;
+            background:rgba(0,0,0,.4);
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 201;
+            >img{
+              width:2rem;
+              margin-top:25%;
+            }
+          }
+        }
+
+        >p{
+          padding:.5rem 5%;
+          span{
+            display: inline-block;
+            &:nth-of-type(1){
+              width:60%;
+              .overflow();
+              vertical-align: middle;
+              text-align: left;
+            }
+            &:nth-of-type(2){
+              vertical-align: middle;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

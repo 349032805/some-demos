@@ -1,0 +1,85 @@
+ @import '../../style/mixin.less';
+
+.my-order {
+  padding-top: 10px;
+
+  .item {
+    background: #fff;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    .store {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      padding-right: 10px;
+
+      .store-name {
+        font-size: 16px;
+        color: #333;
+        float: left;
+      }
+
+      .order-status {
+        float: right;
+        font-size: 14px;
+        color: #FA4F3F;
+      }
+    }
+
+    .detail {
+      padding: 7px 0;
+      position: relative;
+       p {
+        font-size: 14px;
+        color: #999;
+        line-height: 27px;
+       }
+
+     .pre-order {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        .box {
+          width: 30px;
+          height: 16px;
+          line-height: 16px;
+          text-align: center;
+          border: 1px solid #00B3A1;
+          color: #00B3A1;
+          font-size: 12px;
+          border-radius: 4px;
+        }
+      }
+    }
+    
+  }
+
+  .no-record {
+    width: 150px;
+    height: 90px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .no-more {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+}

@@ -1,0 +1,18 @@
+.ball-container .ball{
+    position:fixed;
+    left:32px;
+    bottom:22px;
+    z-index:22;
+}
+.ball-container .ball.drop-enter-active{
+    -webkit-transition:all 0.4s cubic-bezier(0.49,-0.29,0.75,0.41);
+    transition:all 0.4s cubic-bezier(0.49,-0.29,0.75,0.41);
+}
+.ball-container .ball.drop-enter-active .inner{
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:#11bab3;
+    -webkit-transition:all 0.4s linear;
+    transition:all 0.4s linear;
+}    

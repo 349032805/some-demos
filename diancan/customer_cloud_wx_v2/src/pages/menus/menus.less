@@ -1,0 +1,59 @@
+.menus {
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    //左滑动动画
+    .slideLeft-enter-active,
+    .slideLeft-leave-active{
+        transition: opacity .3s;
+    }
+
+    .slideLeft-enter,
+    .slideLeft-leave-active {
+        opacity: 0;
+    }
+    .menus-swiper{
+        background-color:#e7efef;
+        .swiper{
+            padding:10px 12px 0;
+            height: 142px;
+            width:auto;
+            .mint-swipe-indicators{
+                bottom: -2px;
+            }
+            .swiper-item {
+                .top,
+                .bottom{
+                    padding:10px;
+                }
+            }
+            .swiper-box{
+                padding:0;
+            }
+        }
+    }
+}
+.mint-msgbox{
+    border-radius: 4px;
+}
+.mint-msgbox-btns{
+    height: 50px;
+    line-height: 50px;
+}
+.mint-msgbox-message {
+    line-height: 22px;
+    font-size: 15px;
+}
+.mint-toast{
+    width:80% !important;
+}
+.mint-msgbox-btn{
+    font-size: 18px;
+}
+.mint-msgbox-content{
+    border-bottom: 1px solid #e5e5e5;
+}
+.mint-msgbox-cancel{
+    border-right:1px solid #e5e5e5;
+}

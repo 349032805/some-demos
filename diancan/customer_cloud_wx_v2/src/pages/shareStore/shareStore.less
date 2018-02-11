@@ -1,0 +1,227 @@
+@import '../../style/mixin.less';
+
+.share-store {
+  background: url('../../assets/share_bg.png');
+  background-attachment:fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 10px 10px 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  .friend-talk {
+    height: 54px;
+    .friend-head {
+      width: 10%;
+      height: 100%;
+      float: left;
+      img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+      }
+    }
+    .friend-word {
+      width: 90%;
+      height: 100%;
+      float: left;
+      background: rgba(255,255,255,.2);
+      border-radius: 4px;
+      font-size: 12px;
+      color: #fff;
+      padding: 5px 15px;
+      line-height: 20px;
+    }
+  }
+
+  .share-content {
+    width: 100%;
+    margin: 70px auto 0;
+    background: #fff;
+    // border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 60px 10px 0;
+    position: relative;
+    min-height: 100px;
+
+    .store-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      line-height: 100px;
+      text-align: center;
+      margin: auto;
+      background: #fff;
+      z-index: 11;
+      position: absolute;
+      top: -45px;
+      left: 0;
+      right: 0;
+
+      img {
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+    }
+
+    .name-bus {
+      text-align: center;
+      height: 70px;
+      .name {
+          font-size: 18px;
+          color: #333;
+          font-weight: bold;
+          line-height: 30px;
+        }
+
+      .mode {
+        font-size: 13px;
+        color: #666;
+        margin-top: 5px;
+
+        .mode-item {
+          margin-right: 10px;
+        }
+        i {
+          width: 12px;
+          height: 12px;
+          display: inline-block;
+          background: url('../../assets/service_tick.png') no-repeat;
+          background-size: 100% 100%;
+          margin-right: 4px;
+          vertical-align: text-top;
+        }
+
+      }
+    }
+
+    .discount-item {
+      padding: 8px 0 0;
+      position: relative;
+      .row {
+        font-size: 12px;
+        color: #666;
+        height: 20px;
+        line-height: 20px;
+        * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .box {
+          width: 14px;
+          height: 14px;
+          line-height: 14px;
+          text-align: center;
+          border-radius: 2px;
+          color: #fff;
+          font-size: 12px;
+        }
+
+       .orange {
+          background: #FA952F;
+        }
+        .green {
+          background: #70BC46;
+        }
+
+        .red {
+          background: #FF4D4D;
+        }
+
+        .discount-message {
+          width: 75%;
+          padding-left: 5px;
+        }
+
+        .triangle {
+          display: inline-block;
+          height: 0;
+          width: 0;
+          overflow: hidden;
+          border-style: solid;
+          margin-left: 4px;
+          position: relative;
+          bottom: 0;
+          border-width: 4px 4px 0;
+          border-color: #666 transparent transparent;
+        }
+
+        .display {
+          -webkit-transform: rotate(-180deg);
+          -moz-transform: rotate(-180deg);
+          -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+          animation-fill-mode: forwards;
+        }
+
+      }
+
+    }
+    
+  }
+
+  .hot-dish {
+    margin-top: -1px;
+    background: #fff;
+    width: 100%;
+    padding: 0 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+      .theme {
+        text-align: center;
+        font-size: 12px;
+        color: #696969;
+      }
+
+      .dishes {
+        margin-top: 5px;
+        .dish-box {
+          width: 49%;
+          overflow: hidden;
+          padding: 8px 0;
+          img {
+            width: 100%;
+            height: 116px;
+            display: block;
+            border-radius: 3px;
+          }
+          .dish-name {
+            font-size: 15px;
+            color: #333;
+            margin-top: 8px;
+          }
+
+          .dish-sell {
+            font-size: 12px;
+            color: #999;
+            margin-top: 4px;
+          }
+
+          .dish-price {
+            font-size: 13px;
+            color: #FA952F;
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+
+  .go-btn {
+    width: 100%;
+    height: 50px;
+    background: #06C1AE;
+    color: #fff;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    letter-spacing: 1px;
+  }
+}

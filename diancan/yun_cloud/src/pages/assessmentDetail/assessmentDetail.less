@@ -1,0 +1,59 @@
+@import '../../style/mixin.less';
+.assessmentDetail{
+  .anotherpage(200);
+  overflow-y:auto;
+  ul{
+    background:#fff;
+    padding:0 .26rem;
+    overflow-y: scroll;
+    li{
+      position: relative;
+      padding:.26rem 0;
+      border-bottom : 1px solid #eeeeee;
+      >div{
+        >img{
+          width:1.08rem;
+          margin-right:.2rem;
+          height:1.08rem;
+          border-radius: 2px;
+        }
+        >div{
+          display: inline-block;
+          .name{
+            font-size:.3rem;
+            color: #333;
+          }
+          .count{
+            color: #878787;
+            font-size:.24rem;
+          }
+          .price{
+            color: #FA952F;
+            font-size: .26rem;
+            .cancel_money{
+              color: #DBDBDB;
+              font-size: .51rem;
+              text-decoration: line-through;
+            }
+          }
+        }
+        .love{
+          position: absolute;
+          font-size: .24rem;
+          right:0;
+          bottom:.26rem;
+          img{
+            width:.3rem;
+            vertical-align: text-top;
+          }
+          .use_count{
+            color:#FF4D4D;
+          }
+          .love_text{
+            color:#999;
+          }
+        }
+      }
+    }
+  }
+}

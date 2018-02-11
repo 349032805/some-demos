@@ -1,0 +1,52 @@
+@import '../../style/color.less';
+@import '../../style/mixin.less';
+.order-list-content{
+    .order-item{
+        font-size:.28rem;
+        padding: .22rem 0;
+        overflow:hidden;
+        border-top: 1px dashed @cole5;
+        &:first-child{
+            border-top:none;
+        }
+        .name{
+            float: left;
+            width: 60%;
+            .text-overflow();
+        }
+        .quantity{
+            float:left;
+            width:15%;
+            color:@col999;
+            text-align: center;
+        }
+        .price{
+            float:right;
+            width:25%;
+            text-align: right;
+        }
+        .song{
+            margin-top: .12rem;
+            color:@col999;
+            .original-price{
+                text-align: right;
+            }
+        }
+        .remark{
+            color:@col999;
+            .text-overflow();
+        }
+        .original-price{
+            color:@col999;
+            text-decoration: line-through;
+            padding-top: 1px;
+        }
+        img{
+            display: inline-block;
+            width:.32rem;
+            vertical-align: middle;
+            margin-right: .1rem;
+            margin-top: -.05rem;
+        }
+    }
+}

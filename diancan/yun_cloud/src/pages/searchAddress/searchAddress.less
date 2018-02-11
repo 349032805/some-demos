@@ -1,0 +1,28 @@
+  @import '../../style/mixin.less';
+  .searchAddress {
+      .anotherpage(200);
+          background-color: rgba(0,0,0,.7);
+      .searchAddress-box{
+        .wh();
+        position:fixed;
+        top:0;
+        left:0;
+        padding-top:44px;
+        background:transparent;
+        overflow-y:scroll;
+        background:#fff;
+        >div{
+          margin-left:.22rem;
+          padding: .22rem .3rem .22rem 0;
+          border-bottom: .01rem solid #E5E5E5;
+          .name {
+            margin-bottom:.05rem;
+            font-size: .32rem;
+          }
+          .address{
+            font-size: .28rem;
+            color: #888;
+          }
+        }
+      }
+  }

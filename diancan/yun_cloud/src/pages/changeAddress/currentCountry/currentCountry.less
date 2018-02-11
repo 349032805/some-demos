@@ -1,0 +1,41 @@
+@import '../../../style/mixin.less';
+@import '../../../style/color.less';
+  .curAddress{
+    .text{
+      padding:.22rem .3rem;
+      font-size: .28rem;
+      color:#888;
+    }
+    .address{
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      padding:.2rem .3rem;
+      font-size: .28rem;
+      .innerAddress{
+        float:left;
+        width:4.5rem;
+        font-size:.32rem;
+        .overflow();
+        vertical-align: bottom;
+      }
+      .rget{
+        width:2rem;
+        text-align: right;
+        float:right;
+        color:@colred;
+        img{
+            display: inline-block;
+            vertical-align: middle;
+            width: .4rem;
+            margin-right: 3%;
+        }
+      }
+       .textColor {
+         display: inline-block;
+         vertical-align: middle;
+         color : #666;
+     }
+    }
+  }
+ 

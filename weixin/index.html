@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <title v-text='title'></title>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=e755d9d88f3db7bbba38f2b827e4db81"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://a.alipayobjects.com/g/h5-lib/alipayjsapi/3.0.5/alipayjsapi.inc.min.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+<script>
+    window.onload = function () {
+        //支付宝禁用右上角分享
+        if (window.AlipayJSBridge) {
+            AlipayJSBridge.call('hideOptionMenu');
+        }
+    }
+
+    /**
+* YDUI 可伸缩布局方案
+* rem计算方式：设计图尺寸px / 100 = 实际rem 【例: 100px = 1rem，32px = .32rem】
+*/
+    !function (window) {
+
+        /* 设计图文档宽度 */
+        var docWidth = 750;
+
+        var doc = window.document,
+            docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+        var recalc = (function refreshRem() {
+            var clientWidth = docEl.getBoundingClientRect().width;
+
+            /* 8.55：小于320px不再缩小，11.2：大于420px不再放大 */
+            docEl.style.fontSize = Math.max(Math.min(20 * (clientWidth / docWidth), 11.2), 8.55) * 5 + 'px';
+
+            return refreshRem;
+        })();
+
+        /* 添加倍屏标识，安卓为1 */
+        docEl.setAttribute('data-dpr', window.navigator.appVersion.match(/iphone/gi) ? window.devicePixelRatio : 1);
+
+        if (/iP(hone|od|ad)/.test(window.navigator.userAgent)) {
+            /* 添加IOS标识 */
+            doc.documentElement.classList.add('ios');
+            /* IOS8以上给html添加hairline样式，以便特殊处理 */
+            if (parseInt(window.navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8)
+                doc.documentElement.classList.add('hairline');
+        }
+
+        if (!doc.addEventListener) return;
+        window.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+
+    }(window);
+
+</script>
+
+</html>

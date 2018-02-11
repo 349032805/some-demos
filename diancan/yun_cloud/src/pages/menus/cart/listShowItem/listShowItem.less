@@ -1,0 +1,57 @@
+@import '../../../../style/mixin.less';
+.main-content {
+    .flexboxCenter();
+    margin-left:.3rem;
+    padding:.22rem 0;
+    border-bottom: .5px dashed #E5E5E5;
+    .goods-info{
+        
+         -moz-box-flex: 2.0; /*Firefox*/
+         -webkit-box-flex: 2.0; /*Safari,Opera,Chrome*/
+         box-flex: 2.0;
+         flex: 2;
+        .name{
+            font-size: .28rem;
+            color: #333333;
+            >img{
+                vertical-align: text-top;
+                width:.28rem;
+                height:.28rem;
+            }
+        }
+       .attr-name {
+        font-size: .24rem;
+        color: #999999;
+          .sendGoods{
+              .flexboxStart();
+              font-size: .24rem;
+              margin-top:.12rem;
+              color: #999999;
+              img{
+                  display: block;
+                  width:.28rem;
+                  margin-right:.07rem;
+              }
+          }
+        }
+    }
+    .price{
+        text-align: center;
+        font-weight: bold;
+         -moz-box-flex: 1.0; /*Firefox*/
+         -webkit-box-flex: 1.0; /*Safari,Opera,Chrome*/
+         box-flex:1.0;
+         flex:1;
+         color: #FA952F;
+      
+    }
+    .cartcontrol-wrapper{
+        margin-right:.25rem;
+        display: inline-block;
+        text-align: right;
+         -moz-box-flex: 1.0; /*Firefox*/
+         -webkit-box-flex: 1.0; /*Safari,Opera,Chrome*/
+         box-flex:1.0;
+         flex:1;
+    }   
+}

@@ -1,0 +1,47 @@
+@import '../../style/mixin.less';
+.rotate{
+  transform: rotate(180deg);
+}
+.changeAddress{
+  .anotherpage(200);
+  .choose-country{
+
+    border-bottom:1px solid #e2e2e2;
+    padding:8px;
+     background:#EFEFF4;
+    .choose-country_box{
+      background:#fff;
+      padding:.23rem 0;
+      border-radius: 5px;
+      .choose-country_item{
+        width:23%;
+        float:left;
+        padding-left:.7rem;
+        border-right:1px solid #eee;
+        .current-city{
+          display: inline-block;
+          .overflow();
+           width:2rem;
+           font-size: .6rem;
+           vertical-align: middle;
+        }
+        >img{
+            width: .35rem;
+            vertical-align: middle;
+        }
+      }
+      .choose-country_item2{
+        padding-left:.4rem;
+        font-size: .55rem;
+        color:#b6b6b6;
+        vertical-align: middle;
+        display: inline-block;
+        width: 73%;
+      }
+    }
+    
+  }
+  .updown {
+    width:10px;
+  }
+}

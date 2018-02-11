@@ -1,0 +1,85 @@
+@import '../../style/mixin.less';
+
+.cartActivity {
+  .cart {
+    padding-top: 5px;
+    ul {
+      margin: 5px 0;
+      li {
+        float: left;
+        font-size: 14px;
+        line-height: 20px;
+        p {
+          * {
+            display: inline-block;
+          }
+
+          .dot {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: #b5b5b5;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  .activity {
+    padding-top: 10px;
+    .row {
+      li {
+        color: #666;
+        line-height: 22px;
+        float: left;
+
+        * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .outer {
+          width: 7%;
+          float: left;
+          position: relative;
+          top: -1px;
+          margin-right: 3px;
+
+          .box {
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            border-radius: 2px;
+            color: #fff;
+            font-size: 12px;
+          }
+
+          .orange {
+            background: #FA952F;
+          }
+          .green {
+            background: #70BC46;
+          }
+
+          .red {
+            background: #FF4D4D;
+          }
+        }
+
+        .activity-message {
+          font-size: 14px;
+          color: #666;
+          width: 90%;
+          float: left;
+        }
+      }
+
+      .discount-price {
+        color: #FA952F;
+        text-align: right;
+        font-size: 14px;
+      }
+    }
+  }
+}

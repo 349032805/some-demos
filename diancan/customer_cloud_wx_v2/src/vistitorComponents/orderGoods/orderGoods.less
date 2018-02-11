@@ -1,0 +1,89 @@
+@import '../../style/mixin.less';
+.orderGoods{
+  width:100%;
+  .orderGoods-item{
+    margin-top:.2rem;
+     padding-right: .63rem;
+
+    .type{
+         font-size:.51rem;
+         color:#999;
+      }
+    .goods {
+      font-size:.59rem;
+      >span{
+        display: inline-block;
+        color:#999999;
+        vertical-align:middle; 
+      }
+      
+      .goodsName{
+        .overflow();
+        width:57%;
+        color:#666;
+      }
+      .discount {
+          color: #999999;
+          font-size:.51rem;
+          text-align: right;
+          width: 15%;
+              vertical-align: middle;
+              text-decoration: line-through;
+              color:#ccc;
+          .overflow();
+      }
+      .goodsCount{
+        width:7%;
+      }
+      .goodsMoney{
+        .overflow();
+        width:19%;
+        float:right;
+        text-align: right;
+      }
+    }
+    .sendGoods{
+      span{
+        color:#999999;
+        font-size: .4rem;
+        display: inline-block;
+      }
+      .sendCount{
+        .overflow();
+        margin-left:4.1%;
+      }
+      .type{
+        width:4%;
+        font-size:.51rem;
+        margin-left:.4rem;
+        position: relative;
+        vertical-align: middle;
+        color:#666;
+        &:before{
+            content:"";
+            position: absolute;
+            display: block;
+            width:3px;
+            border-radius: 50%;
+            height:3px;
+            background:#B5B5B5;
+            top:7px;
+            left:-7px;
+            
+            
+        }
+      }
+      .sendCount{
+        font-size:.51rem;
+        vertical-align: middle;
+      }
+      .sendName {
+        .overflow();
+        width:44%;
+        margin-left:.2rem;
+        font-size: .51rem;
+        vertical-align: middle;
+      }
+    }
+  }
+}

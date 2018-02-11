@@ -1,0 +1,101 @@
+ @import '../../../../style/mixin.less';
+ .item-dish{
+     .img-box{
+        position: relative;
+        display:inline-block;
+        height:130px;
+        width:100%;
+        border-radius:4px;
+        border:1px solid #e5e5e5;
+        background-color: #e5e5e5;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow:hidden;
+        font-size: 0;
+        img{
+            display: inline-block;
+            vertical-align: middle;
+            // height: 100%;
+        }
+        .tipImg{
+            position: absolute;
+            top:0;
+            left:0;
+            >img{
+                width:.6rem;
+            }
+            :nth-of-type(1){
+                margin-right:.1rem;
+            }
+        }
+    }
+    .food-info{
+        position: relative; 
+        .price{
+            margin-top:.4rem;
+            .flexboxCenter();
+            .start-money {
+                font-size: .22rem;
+                color: #F1903F;
+            }
+            .bragin-price {
+                font-size: .26rem;
+                color: #F1903F;
+                font-weight: bolder;
+            }
+            .now-price{
+                font-weight: normal;
+                font-size: .22rem;
+                color: #DBDBDB;
+            }
+            .saled {
+                font-size: .22rem;
+                color: #999999;
+            }
+        }
+        .foodName{
+            font-size: .3rem;
+            color: #333333;
+        }
+        .activity{
+            position: absolute;
+            top:.26rem;
+            left:0;
+            .flexboxStart();
+            >img{
+                width:.3067rem;
+                display: block;
+                
+            }
+            >span{
+                
+                transform-origin: left;
+                transform: scale(0.5,0.5);
+                border:1px solid #F1503F; 
+                color:#F1503F ;
+                font-size: .44rem;
+                
+            }
+        }
+      
+    }
+    // h3{
+    //     margin-top:8px;
+    //     margin-bottom:2px;
+    //     padding-left:1px;
+    //     font-size:15px;
+    //     text-overflow: ellipsis;
+    //     white-space: nowrap;
+    //     overflow: hidden;
+    //     font-weight:normal;
+    // }
+    // p{
+    //     padding-left:1px;
+    // }
+    // .count{
+    //     color:#999;
+    //     font-size:12px;
+    // }
+    
+ }

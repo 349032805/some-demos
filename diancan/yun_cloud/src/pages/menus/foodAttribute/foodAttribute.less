@@ -1,0 +1,169 @@
+
+.guige {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 8px 15px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    border-radius: 4px;
+}
+
+.active {
+    color: #F1503F;
+    border: 1px solid #F1503F;
+    background: rgba(241,80,63,0.10);
+}
+
+.choose {
+    color: #ccc;
+    border: 1px solid #ccc;
+}
+
+.gray {
+    color: #ccc !important;
+    border: 1px solid #ccc !important;
+    background: #fff !important;
+}
+.pos(@pos:absolute,@top:inherit,@right:inherit,@bottom:inherit,@left:inherit){
+    position: @pos;
+    top:@top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+.food-attribute + .backdrop{
+    z-index: 4;
+}
+.food-attribute{
+    .pos(@pos:fixed, @top:15%, @right:0, @left:50%);
+    width: 90%;
+    margin-left: -45%;
+    z-index: 300;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow:hidden;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.45);
+    .food-title{
+        height: .88rem;
+        line-height: .88rem;
+        text-align: center;
+        font-size:.32rem;
+        color:#666666;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 0 40px;
+        overflow: hidden;
+        background: #EFEFEF;
+        .close{
+            position: absolute;
+            right: 0;
+            display: inline-block;
+            width:50px;
+        }
+        .icon-error{
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background:url(../../../assets/error2.png) no-repeat center;
+            background-size:100%;
+        }
+    }
+    .food-content{
+        max-height: 5.86rem;
+        overflow-y: scroll;
+        padding:.34rem .23rem .425rem;
+        border-bottom:1px solid #e6e6e6;
+        .item{
+            display: inline-block;
+            font-size:13px;
+            margin-right:8px;
+            margin-bottom:8px;
+            padding:8px 15px;
+            border:1px solid #efefef;
+            background-color:#efefef;
+            border-radius: 4px;
+            &.checked{
+                color:#06C1AE ;
+                border:1px solid #06C1AE;
+                background: rgba(6,193,174,0.10);
+            }
+        }
+       
+        .label-box{
+            label{
+                position: relative;
+                display: inline-block;
+                margin: 0 5px 5px 0;
+                span{
+                    display: inline-block;
+                    font-size:13px;
+                    margin-right:8px;
+                    margin-bottom:8px;
+                    padding:8px 15px;
+                    border:1px solid #efefef;
+                    background-color:#efefef;
+                    border-radius: 4px;
+                    pointer-events: none;
+                }
+                input{
+                    display: none;
+                    &:checked+span{
+                        color:#06C1AE ;
+                        border:1px solid #06C1AE;
+                        background: rgba(6,193,174,0.10);
+                    }
+                }
+            }
+        }
+        .rule-item{
+            .tipText{
+                font-size: .24rem;
+                color: #F1503F;
+            }
+            p{
+                font-size:.3rem;
+                color:#666;
+                margin-bottom:.36rem;
+            }
+            .attr-span{
+                position: relative;
+                .sell-out{
+                    .pos(@top:-15px, @right:0);
+                    background-color:#ccc;
+                    color:#fff;
+                    font-size:12px;
+                    padding:0 4px;
+                    border-radius: 5px;
+                    transform: scale(0.9);
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+    .food-footer{
+        padding:0 15px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        .btn-confirm{
+            float:right;
+            width:2.4rem;
+            height:.7rem;
+            line-height: 35px;
+            margin-top: 8px;
+            border-radius: 4px;
+            background: #F1503F;
+            color:#fff;
+            font-size:13px;
+            text-align:center;
+        }
+        .now-price{
+            color:#999;
+            text-decoration: line-through;
+            font-size: 12px;
+            padding-left:5px;
+        }
+    }
+}

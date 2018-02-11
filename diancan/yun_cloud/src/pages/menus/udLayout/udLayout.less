@@ -1,0 +1,155 @@
+.pos(@pos:absolute,@top:inherit,@right:inherit,@bottom:inherit,@left:inherit){
+    position: @pos;
+    top:@top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+.bigMenus {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color:#fafafa;
+    &.hide-title{
+        .pos(@pos:absolute, @top:0, @right:0, @left:0);
+    }
+    .loading{
+        .pos(@top:0,@right:0,@bottom:0,@left:0);
+        z-index: 10000;
+        text-align: center;
+        background-color: #fff;
+        .loading-box{
+           .pos(@top:-10%,@right:0,@bottom:0,@left:0);
+            margin: auto;
+            height: 75px;
+            width: 75px;
+            background: rgba(0,0,0,0.8);
+            border-radius: 8px;
+            position: absolute;
+        }
+        img{
+            width: 30px;
+            margin-top: 12px;
+        }
+        p{
+            padding-top:5px;
+            color:rgba(255,255,255,.8);
+            font-size: 12px;
+        }
+        
+    }
+    .num{
+        width:.28rem;
+        height:.28rem;
+        background:#F1503F;
+        color:#ffffff;
+        font-size:.24rem;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .menu-box{
+        padding-right: 2%;
+        overflow:hidden;
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color:#fafafa;
+        z-index:1;
+        .search-box{
+            position: relative;
+            padding:11px 35px 6px 13px;
+            font-size: 14px;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            overflow: hidden;
+            background-color:#fafafa;
+            .icon-search{
+                position: relative;
+                display:inline-block;
+                width:13px;
+                height:13px;
+                background:url('../../../assets/small-search.png') no-repeat center;
+                background-size:cover;
+                margin-right:5px;
+                top:1px;
+            }
+        }
+        &:after{
+            content: "";
+            .pos(@pos:absolute,@top:initial, @right:0, @bottom:0, @left:0);
+            border-top:1px solid #e8e8e8;
+            -webkit-transform-origin: 0 100%;
+            transform-origin:0 100%;
+            -webkit-transform:scaleY(0.5);
+            transform:scaleY(0.5);
+        }
+    }
+    .eat-item{
+        white-space: nowrap;
+        li{
+            display: inline-block;
+        }
+    }
+    .menu-header{
+        position:relative;
+        overflow:hidden;
+        height:43px;
+        white-space:nowrap;
+        background-color: #fafafa;
+        z-index:1;
+        ul{ 
+            background-color:#fafafa;
+            li{
+                display:inline-block;
+                position: relative;
+                font-size:14px;
+                margin:6px 35px 6px 0;
+                padding:5px 0;
+                .num{
+                    .pos(@pos:absolute, @top:6px, @right:-20px);
+                }
+            }
+            .current:after {
+                content: "";
+                .pos(@pos:absolute,@right:0, @bottom:0, @left:0);
+                height: 3px;
+                background: #F03C3C;
+                border-radius: 15px;
+                overflow: hidden;
+                display: inline-block;
+            }
+        }
+    }
+    .menu-list{
+        .pos(@pos:absolute, @top:44px, @right:0, @bottom:100px, @left:0);
+        background-color:#fff;
+        z-index: 0;
+        .eat-item {
+            padding:.2rem .15rem .1rem;
+        }
+        .menuName{
+            padding-top:.1rem;
+            font-size: .26rem;
+            color: #696969;
+            text-align:center;
+            font-weight:normal;
+            >span{
+                margin-left: .1rem;
+            }
+        }
+        .item-list{
+            padding-left:2%;
+            overflow:hidden;
+            li{
+                float: left;
+                width: 50%;
+                padding-right:2%;
+                padding-top:15px;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+        }
+    }
+}

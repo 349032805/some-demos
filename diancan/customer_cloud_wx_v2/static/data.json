@@ -1,0 +1,949 @@
+{
+  "code": 200,
+  "errorCode": 0,
+  "extra": {},
+  "message": "OK",
+  "model": [
+    {
+      "fsmenuclsid": "010",
+      "fsmenuclsname": "早餐",
+      "menuItemList": [
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRyU-AId04AAEYJdhL4Zk018.jpg",
+          "fsitemdesc": "在德国，每个地方都有其可以引以为傲的香肠品种，其中格廷根和雷根斯堡的香肠从中世纪起就已享有盛名。没有什么可以和图林根的红肠相媲美的了，这种可烤着吃的香肠加有好闻的墨角兰香料。而卡塞尔的居民最爱吃他们自己做的肝泥香肠，施瓦本地区的人们则迷恋加了百里香、丁香和豆子等调味品的黑香肠。还有手指般大小的烤肠，它来自柏林，香肠被切成细薄片，抹上调味番茄酱，再撒上薄薄一层咖喱粉，又香又鲜。名气不小",
+          "fsitemid": "001",
+          "fsitemname": "德式香肠",
+          "isShowUnit": 0,
+          "likeNum": 0,
+          "menuItemAskList": [
+            {
+              "fdaddprice": 0,
+              "fsaskid": "007",
+              "fsaskname": "加火腿"
+            },
+            {
+              "fdaddprice": 0,
+              "fsaskid": "8",
+              "fsaskname": "加培根"
+            }
+          ],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 18,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2B/CgpuMVlRyWWAHmZ8AACoZi4u73I871.jpg",
+          "fsitemdesc": "火腿作业标准脆皮肠作业标准高温火腿肠作业标准果木大烤肠作业标准切片火腿...盐水火腿中的用量问题",
+          "fsitemid": "002",
+          "fsitemname": "烟熏里肌",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 18,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "011",
+      "fsmenuclsname": "海鲜小炒",
+      "menuItemList": [
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRyuSAKhxOAAFjgn0tbwM222.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "012",
+          "fsitemname": "野生小河虾",
+          "isShowUnit": 0,
+          "likeNum": 0,
+          "menuItemAskList": [
+            {
+              "fdaddprice": 0,
+              "fsaskid": "012",
+              "fsaskname": "酱油"
+            },
+            {
+              "fdaddprice": 0,
+              "fsaskid": "13",
+              "fsaskname": "油爆"
+            }
+          ],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 138,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRy56AQLnMAAC5MTKQeyA343.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "017",
+          "fsitemname": "千岛湖鱼头",
+          "isShowUnit": 0,
+          "likeNum": 0,
+          "menuItemAskList": [
+            {
+              "fdaddprice": 0,
+              "fsaskid": "014",
+              "fsaskname": "剁椒"
+            },
+            {
+              "fdaddprice": 0,
+              "fsaskid": "15",
+              "fsaskname": "垮炖"
+            },
+            {
+              "fdaddprice": 0,
+              "fsaskid": "16",
+              "fsaskname": "炖豆腐"
+            }
+          ],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 125,
+              "fdvipprice": 0,
+              "fsorderunit": "半只",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRzEyAbmQKAAFaBMNq4pM814.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "018",
+          "fsitemname": "野生大鳊鱼",
+          "isShowUnit": 0,
+          "likeNum": 0,
+          "menuItemAskList": [
+            {
+              "fdaddprice": 0,
+              "fsaskid": "017",
+              "fsaskname": "红烧"
+            },
+            {
+              "fdaddprice": 0,
+              "fsaskid": "18",
+              "fsaskname": "清蒸"
+            }
+          ],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 298,
+              "fdvipprice": 0,
+              "fsorderunit": "条",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRykSAZUcwAAKZG_c4pw8979.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "009",
+          "fsitemname": "宫廷小炒皇",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 98,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRylmAayHZAAG6O6wLjhg701.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "010",
+          "fsitemname": "响油鳝丝",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 138,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRypyAZ5bKAAEza_jEvSc227.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "011",
+          "fsitemname": "翡翠花枝片",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 138,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRyxWAe4RfAAHoKGnOUUU692.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "013",
+          "fsitemname": "泰汁鲜鱿鱼圈",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 138,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRy0GAEjyuAAG1-pl9PYU084.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "014",
+          "fsitemname": "爆炒海螺片",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 168,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRy2SAayoxAAFu7K1Nrhs811.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "015",
+          "fsitemname": "XO酱爆澳带",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 298,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRy4CAAsdwAAI0M1-JMac781.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "016",
+          "fsitemname": "肉饼蒸黄鱼",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 118,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRzIeAEY46AAKkNEazyVk403.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "019",
+          "fsitemname": "干烧黄鱼",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 368,
+              "fdvipprice": 0,
+              "fsorderunit": "条",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRzKqAc9QuAACndupUdWw389.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "020",
+          "fsitemname": "宫廷小牛肉",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 98,
+              "fdvipprice": 0,
+              "fsorderunit": "例",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRzN2ACLpaAACndupUdWw517.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "021",
+          "fsitemname": "油焖大虾",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 128,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRzQmAEoLGAAII4ebfLlM018.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "022",
+          "fsitemname": "宫廷抓炒大虾",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 128,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRzSmAW2QeAAFV48PeT5A255.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "023",
+          "fsitemname": "清炒虾仁",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 128,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRzT-AKI8nAAIAwyJppwA794.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "024",
+          "fsitemname": "金沙薯条虾",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 128,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRzV-AdW6vAAEokLoVbBU330.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "025",
+          "fsitemname": "果味沙旦虾球",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 148,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRzdCAUd1QAAHRY8jbRzI940.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "026",
+          "fsitemname": "椒盐基围虾",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 148,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRzfGAcFgiAAEm3vbjm6E417.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "027",
+          "fsitemname": "荷塘月色",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 228,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "007",
+      "fsmenuclsname": "热炒",
+      "menuItemList": [
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRyXGAdtIKAAEowLXZUYk535.jpg",
+          "fsitemdesc": "白菜炖粉皮是北方冬季常吃的家常菜，但传统的做法吃的口腻了，做个鱼香味的白菜粉皮吧。小酸、小甜，微辣的鱼香味的白菜粉皮，这样的味道很讨喜。",
+          "fsitemid": "003",
+          "fsitemname": "鱼香白菜粉皮",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 25,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRyYaAA8HPAAA7J87P15A124.jpg",
+          "fsitemdesc": "海瓜子,贝壳类,生长于滩涂,肉质细腻,极鲜嫩.做此菜除调味要适当尽量保持原有的鲜味外,更重要的一点是一定要掌握火候,不能炒久了使肉质失去嫩度.",
+          "fsitemid": "004",
+          "fsitemname": "爆炒海瓜子",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 28,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "008",
+      "fsmenuclsname": "冷菜",
+      "menuItemList": [
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRyZCAaXZbAAA5fDuFI94196.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "005",
+          "fsitemname": "胭脂冬瓜",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 10,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRyaeAZ9ldAABzzmuLH6I826.jpg",
+          "fsitemdesc": "我国传统医学认为：金针菇性寒，味咸，能利肝脏、益肠胃、增智慧、抗癌瘤。金针菇柄中含有大量食物纤维，可以吸附胆酸，降低胆固醇，促使胃肠蠕动，常吃对高脂血的老人有一定的好处。多吃金针菇，可以起到增强免疫力的作用，吃的时候应避免过度烹煮，凉拌或涮火锅都是较好的吃法。",
+          "fsitemid": "006",
+          "fsitemname": "葱油拌金针菇",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 10,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRzjiAXtbxAAFfEuhcgQI763.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "028",
+          "fsitemname": "四喜烤麸",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 38,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRzoOACjrhAAIAwyJppwA010.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "029",
+          "fsitemname": "跳跳养生菜",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 48,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRz_qAKe7WAADfjatDl7g886.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "030",
+          "fsitemname": "桂花糖藕",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 48,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "",
+          "fsitemdesc": "",
+          "fsitemid": "031",
+          "fsitemname": "椒麻莴笋",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 48,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "009",
+      "fsmenuclsname": "酒水",
+      "menuItemList": [
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllRybWAWygjAAA5UnYUoS4136.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "007",
+          "fsitemname": "爱玉蜜",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 15,
+              "fdvipprice": 0,
+              "fsorderunit": "杯",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlRyb-AEvDUAAAawqnZKgg231.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "008",
+          "fsitemname": "美式咖啡",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 18,
+              "fdvipprice": 0,
+              "fsorderunit": "杯",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "004",
+      "fsmenuclsname": "荤菜",
+      "menuItemList": [
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlR8oaAQ57zAAG6O6wLjhg959.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "032",
+          "fsitemname": "肥牛肉",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 38,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        },
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllR8xeAJ3TJAAFaBMNq4pM702.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "033",
+          "fsitemname": "羊肉片",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 28,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "005",
+      "fsmenuclsname": "素菜",
+      "menuItemList": [
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/2C/CgpuMVlR8zGAchtJAAC5MTKQeyA748.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "034",
+          "fsitemname": "小青菜",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 18,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "006",
+      "fsmenuclsname": "丸子",
+      "menuItemList": [
+        {
+          "fiisspecialty": 0,
+          "fsimageurl": "http://10.10.110.48:22222/group1/M00/00/29/CgpuMllR80uAeX3kAAG6O6wLjhg915.jpg",
+          "fsitemdesc": "",
+          "fsitemid": "035",
+          "fsitemname": "贡丸",
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": 0,
+              "fdsaleprice": 25,
+              "fdvipprice": 0,
+              "fsorderunit": "份",
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "1",
+      "fsmenuclsname": "招牌菜",
+      "menuItemList": [
+        {
+          "fiisspecialty": null,
+          "fsimageurl": null,
+          "fsitemdesc": null,
+          "fsitemid": null,
+          "fsitemname": null,
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": null,
+              "fdsaleprice": null,
+              "fdvipprice": null,
+              "fsorderunit": null,
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "2",
+      "fsmenuclsname": "新品",
+      "menuItemList": [
+        {
+          "fiisspecialty": null,
+          "fsimageurl": null,
+          "fsitemdesc": null,
+          "fsitemid": null,
+          "fsitemname": null,
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": null,
+              "fdsaleprice": null,
+              "fdvipprice": null,
+              "fsorderunit": null,
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "3",
+      "fsmenuclsname": "特价菜",
+      "menuItemList": [
+        {
+          "fiisspecialty": null,
+          "fsimageurl": null,
+          "fsitemdesc": null,
+          "fsitemid": null,
+          "fsitemname": null,
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": null,
+              "fdsaleprice": null,
+              "fdvipprice": null,
+              "fsorderunit": null,
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    },
+    {
+      "fsmenuclsid": "9",
+      "fsmenuclsname": "套餐",
+      "menuItemList": [
+        {
+          "fiisspecialty": null,
+          "fsimageurl": null,
+          "fsitemdesc": null,
+          "fsitemid": null,
+          "fsitemname": null,
+          "isShowUnit": 1,
+          "likeNum": 0,
+          "menuItemAskList": [],
+          "menuItemUnitList": [
+            {
+              "bargainPrice": null,
+              "fdinvqty": null,
+              "fdsaleprice": null,
+              "fdvipprice": null,
+              "fsorderunit": null,
+              "menuItemActivity": null
+            }
+          ],
+          "soldNum": 0
+        }
+      ]
+    }
+  ],
+  "time": 1498552420479
+}

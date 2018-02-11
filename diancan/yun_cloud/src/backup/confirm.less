@@ -1,0 +1,563 @@
+@import '../../style/mixin.less';
+.mint-switch-core {
+    border-color: #09BB07!important;
+    background-color: #09BB07!important;
+}
+.order-confirm {
+  .anotherpage(300);
+  // padding-top: 167px;
+  padding-bottom: 60px;
+  overflow: auto;
+  .layer{
+    position: relative;
+    // left: 0;
+    // top: 0;
+    z-index: 11;
+    width: 100%;
+    .price-ban {
+      text-align: center;
+      padding: 10px 0;
+      background: #F5F5F5;
+
+      .store-name {
+        font-size: 16px;
+        color: #333;
+      }
+
+      .total-price {
+        font-size: 40px;
+        color: #333;
+        font-weight: bold;
+      }
+      .origin-price {
+        font-size: 16px;
+        color: #999;
+      }
+    }
+
+    .order-mode {
+      background: #fff;
+      margin-bottom: 10px;
+      
+      .row {
+        height: 44px;
+        line-height: 44px;
+        padding: 0 15px;
+        font-size: 16px;
+
+        .two-select {
+          height: 100%;
+          .mode-change {
+            // font-size: 16px;
+            font-size: .71rem;
+            color: #333;
+            width: 28%;
+            // border-right: 1px solid #e5e5e5;
+            float: left;
+
+            .triangle {
+              display: inline-block;
+              height: 0;
+              width: 0;
+              overflow: hidden;
+              border-style: solid;
+              margin-left: 4px;
+              position: relative;
+              bottom: 3px;
+              border-width: 6px 6px 0;
+              border-color: #C7C7CC transparent transparent;
+            }
+        
+          }
+
+          .eat-mode {
+            width: 72%;
+            float: left;
+            text-align: right;
+            button {
+              width: 75px;
+              height: 30px;
+              border: 1px solid #DCDCDC;
+              border-radius: 4px;
+              background: #fff;
+              margin-left: 15px;
+              font-size: 14px;
+            }
+
+            .active {
+              border: 1px solid #06C1AE;
+              background: #EFFFFE;
+              color: #06C1AE;
+            }
+          }
+        }
+
+
+      }
+
+      .two-rows {
+        .active-row {
+          color: #06C1AE;
+        }
+        .tick {
+          float: right;
+          img {
+            width: 13px;
+            height: 9px;
+            vertical-align: middle;
+          }
+        }
+      }
+
+    }
+  }
+
+  .time-phone {
+    background: #fff;
+    margin-bottom: 10px;
+
+    .row {
+      height: 44px;
+      line-height: 44px;
+      padding: 0 15px;
+      font-size: 16px;
+
+      .arrow {
+        width: 8px;
+        height: 13px;
+        vertical-align: middle;
+        margin-left:7px;
+      }
+    }
+  }
+
+  .orderlist-discount {
+    padding: 10px 15px 8px;
+    background: #fff;
+  }
+
+  .remark {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 15px;
+    font-size: 16px;
+    background: #fff;
+    margin-top: 10px;
+
+
+    .remark-title {
+      float: left;
+      width: 15%;
+    }
+
+    .content {
+      float: left;
+      width: 80%;
+      height: 100%;
+      text-align: right;
+      color: #999;
+    }
+
+    .display {
+      width: 13px;
+      height: 8px;
+      vertical-align: middle;
+      -webkit-transition:all .4s ease 0s;
+      -moz-transition:all .4s ease 0s;
+      -o-transition:all .4s ease 0s;
+      transition:all .4s ease 0s;
+    }
+
+    .convert {
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+      animation-fill-mode: forwards;
+    }
+
+  }
+
+  .remark-detail {
+    padding: 10px 15px;
+    background: #fff;
+    position: relative;
+
+    .split-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 92%;
+      height: 1px;
+    }
+
+      .taste-options {
+        color: #333;
+        font-size: 13px;
+
+        ul {
+          height: 27px;
+          li {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            button {
+              border: 1px solid #c7c7c7;
+              border-radius: 4px;
+              padding: 0 10px;
+              height: 27px;
+              background: #fff;
+              font-size: 13px;
+              min-width: 84px;
+            }
+            .current-select {
+              background: rgba(6,193,174,0.10);
+              border: 1px solid #06C1AE;
+              color: #06C1AE;
+            }
+
+          }
+        }
+
+        .mt10{
+          margin-top: 10px;
+        }
+      }
+    
+
+      .other-demand {
+        margin-top: 10px;
+        background: #fff;
+        input {
+          height: 34px;
+          width: 100%;
+          padding-left: 12px;
+          background: #f1f1f1;
+          display: block;
+          font-size: 14px;
+          border-radius: 3px;
+        }
+      }
+
+    }
+
+
+    .phone-modal {
+      width: 320px;
+      height: 256px;
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      margin-top: -128px;
+      margin-left: -160px;
+      background: #f8f8f8;
+      border-radius: 4px;
+      z-index: 101;
+
+      .title {
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #323232;
+        font-size: 18px;
+        background: #F0F0F0;
+        font-weight: bold;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        position: relative;
+
+        .close {
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          img {
+            height: 12px;
+            width: 12px;
+            vertical-align: middle;
+          }
+        }
+      }
+      .content {
+        padding: 15px 20px;
+        .row{
+          height: 46px;
+          margin-bottom: 15px;
+          position: relative;
+          input {
+            width: 100%;
+            height: 100%;
+            padding-left: 12px;
+            font-size: 16px;
+            border: 1px solid #e5e5e5;
+            border-radius: 4px;
+          }
+          button {
+            width: 94px;
+            height: 30px;
+            background: #F7F7F7;
+            border: 1px solid #e5e5e5;
+            font-size: 14px;
+            color: #323232;
+            border-radius: 3px;
+            position: absolute;
+            top: 8px;
+            right: 10px;
+          }
+
+          .clear{
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            top: 16px;
+            right: 114px;
+          }
+        }
+
+        .sure-btn {
+          width: 100%;
+          height: 47px;
+          background: rgba(6,193,174,0.40);
+          border-radius: 4px;
+          font-size: 18px;
+          color: #fff;
+          margin-top: 5px;
+
+          .loading-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+        }
+
+        .active-btn {
+          background: #06C1AE!important;
+        }
+      }
+    }
+
+    .mint-popup {
+      width: 100%;
+
+      .time-picker {
+        width: 100%;
+        height: 281px;
+        overflow: hidden;
+        .date-select {
+          width: 40%;
+          height: 100%;
+          float: left;
+          background: #f5f5f5;
+          overflow-y: auto;
+
+          ul{
+            li {
+              height: 44px;
+              line-height: 44px;
+              text-align: center;
+              font-size: 16px;
+              color: #666;
+            }
+          }
+        }
+
+        .time-select {
+          width: 100%;
+          height: 100%;
+          float: left;
+          overflow-y: auto;
+          overflow-x: hidden;
+           ul{
+            li {
+              height: 44px;
+              line-height: 44px;
+              font-size: 16px;
+              color: #333;
+              // padding-left: 40px;
+              text-align: center;
+              // padding-right: 20px;
+              position: relative;
+              overflow: hidden;
+
+               * {
+                display: inline-block;
+               }
+
+              .tick {
+                position: absolute;
+                right: 20px;
+                top: 0;
+                img {
+                  width: 13px;
+                  height: 9px;
+                  vertical-align: text-top;
+                }
+              }
+            }
+            .active {
+              color: #06C1AE;
+              background: #fff;
+            }
+
+          }
+
+        }
+      }
+    }
+
+    //点餐完成后的模态框
+    .remind-modal {
+      width: 310px;
+      // height: 322px;
+      position: fixed;
+      top: 43%;
+      left: 50%;
+      margin-top: -161px;
+      margin-left: -155px;
+      background: #fff;
+      border-radius: 8px;
+      z-index: 101;
+      padding-top: 10px;
+
+      .title {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+        color: #000;
+      }
+
+      .remind {
+        width: 282px;
+        // height: 154px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .no-next {
+        text-align: center;
+        width: 100%;
+        // height: 50px;
+        // line-height: 50px;
+        font-size: 15px;
+        color: #888;
+        padding: 14px 0;
+
+        * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .box {
+          width: 13px;
+          height: 12px;
+          line-height: 0;
+          text-align: center;
+          border: 1px solid #D0D0D0;
+          border-radius: 2px;
+
+          img {
+            width: 100%;
+            height: 90%;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .isee {
+        width: 100%;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        font-size: 18px;
+        color: #06C1AE;
+      }
+    }
+
+  .invoice {
+    margin-top: 10px;
+    background: white;
+    padding: 0 15px;
+
+    .invoice-switch {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .invoice-write {
+      padding-top: 15px;
+      background: white;
+
+      .invoice-type {
+        margin-bottom:20px;
+        font-size: 16px;
+        color: #333;
+        * {
+          display:inline-block;
+          vertical-align: middle;
+        }
+
+        .option {
+          width: 23px;
+          height: 23px;
+          vertical-align: middle;
+        }
+        .type-tick{
+          background: url("../../assets/success_icon.png") no-repeat;
+          background-size: 100% 100%;
+        }
+
+        .type-circle {
+          background: url("../../assets/circle.png") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+
+      input {
+        height: 34px;
+        width: 100%;
+        padding-left: 12px;
+        background: #f1f1f1;
+        display: block;
+        font-size: 14px;
+        margin: -10px 0 10px;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .pay-btn {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+  }
+
+  .weixinPay{
+    background: #07B905;
+  }
+
+  .aliPay{
+     background: #29A1F7;
+  }
+
+  .weui-dialog{
+    .confirm_button_box {
+      .cancel_btn {
+        color: #06C1AE;
+      }
+    }
+  }
+
+}

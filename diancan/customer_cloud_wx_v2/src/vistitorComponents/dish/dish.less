@@ -1,0 +1,101 @@
+ .pos(@pos:absolute,@top:inherit,@right:inherit,@bottom:inherit,@left:inherit){
+    position: @pos;
+    top:@top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+ .number-control{
+    .pos(@right:10px, @bottom:10px);
+    width:80px;
+    .btn-dish-box .btn-add-box{
+        background:url(../../assets/mini-plus-minus.png) no-repeat center;
+        background-size:100%;
+        border:none;
+        .btn-minus, 
+        .btn-plus{
+            font-size: 0;
+            opacity: 0;
+        }
+    }
+    .num{
+        .pos(@top:-3px, @right:-5px);
+        padding:1px 5px;
+        border-radius: 18px;
+        background-color:#06C1AE;
+        color:#fff;
+        font-size:13px;
+    }
+}
+h2{
+    position: relative;
+    padding-left:10px;
+    font-size: 13px;
+    height: 25px;
+    line-height: 25px;
+    background-color:#fafafa;
+    color:#696969;
+    font-weight:normal;
+    &:after{
+        content:"";
+        .pos(@right:0, @bottom:0, @left:0);
+        border-bottom:1px solid #e8e8e8;
+        -webkit-transform-origin: 0 100%;
+        transform-origin:0 100%;
+        -webkit-transform:scaleY(0.5);
+        transform:scaleY(0.5);
+    }
+}
+.img-box{
+    position: relative;
+    margin-right: 10px;
+    overflow: hidden;
+    img{
+        max-width:100%;
+        width:67px;
+        height:50px;
+        border-radius: 2px;
+    }
+    .youhui{
+        .pos(@right:0, @bottom:0, @left:0);
+        height:16px;
+        line-height:16px;
+        background: url(../../assets/hui-bg.png) no-repeat center;
+        font-size:12px;
+        color:#fff;
+        text-align: center;
+    }
+}
+.list-item li {
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    &:after{
+        content:"";
+        .pos(@right:0, @bottom:0, @left:10px);
+        border-bottom:1px solid rgba(7,17,27,.1);
+        -webkit-transform-origin: 0 100%;
+        transform-origin:0 100%;
+        -webkit-transform:scaleY(0.5);
+        transform:scaleY(0.5);
+    }
+    h3{
+        font-size: 15px;
+        line-height: 16px;
+        font-weight: normal;
+        margin-bottom:5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    p{
+        color: #878787;
+        font-size: 12px;
+    }
+    p.price{
+        color: #FA952F;
+        font-size: 13px;
+        margin-top:3px;
+    }
+}

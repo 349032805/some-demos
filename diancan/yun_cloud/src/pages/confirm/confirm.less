@@ -1,0 +1,162 @@
+@import '../../style/mixin.less';
+// .mint-switch-core {
+//     border-color: #09BB07;
+//     background-color: #09BB07!important;
+// }
+
+.mint-switch-input:checked+.mint-switch-core{
+  border-color: #09BB07!important;
+  background-color: #09BB07!important;
+}
+.order-confirm {
+  .anotherpage(300);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 1.5rem;
+
+  .text-input {
+    height: .7rem;
+    width: 100%;
+    padding-left: .24rem;
+    background: #f1f1f1;
+    display: block;
+    font-size: .28rem;
+    border-radius: 3px;
+  }
+
+  .return {
+    height: .88rem;
+    line-height: .88rem;
+    font-size: .28rem;
+    padding: 0 .3rem;
+    background: #fff;
+    margin-top: .2rem;
+
+    .store-logo {
+      height: 100%;
+      float: left;
+        img {
+          width: .36rem;
+          height: .36rem;
+          border-radius: 50%;
+          // vertical-align: middle;
+          vertical-align: sub;
+        }
+    }
+
+    .store-name {
+      width: 40%;
+      margin-left: .14rem;
+      display: block;
+      float: left;
+    }
+    .return-btn {
+      width: 1.4rem;
+      height: .5rem;
+      font-size: .24rem;
+      background: #F1503F;
+      color: #fff;
+      border-radius: 14px;
+      float: right;
+      margin-top: .16rem;
+    }
+  }
+
+  .remind {
+    height: .72rem;
+    line-height: .72rem;
+    background: #FFF7D6;
+    padding-left: .3rem;
+    color:#BEA064;
+    font-size: .26rem;
+    border-bottom: 1px solid #dcdcdc;
+
+    .tip {
+      float: left;
+      .never-remind {
+        color: #F03C3C;
+        text-decoration: underline;
+      }
+    }
+    .close-tip{
+      width: .8rem;
+      height: .42rem;
+      float: right;
+      text-align: center;
+      margin-top: .12rem;
+      border-left:1px solid rgba(0,0,0,0.10);
+      padding-top: .12rem;
+
+      img {
+        width: .19rem;
+        height: .19rem;
+      }
+    }
+  }
+
+  //菜单列表
+  .menu {
+    background: #fff;
+  }
+
+  // 是否需要打包
+  .package {
+      height: .88rem;
+      line-height: .88rem;
+      background: #fff;
+      padding: 0 .3rem;
+      font-size: .32rem;
+      margin-top: .2rem;
+
+      .package-switch {
+        span {
+          color: #F1503F;
+          margin-right: .08rem;
+        }
+        img {
+          width: .46rem;
+          height: .46rem;
+          vertical-align: middle;
+        }
+      }
+  }
+  
+  //是否预点
+  .prepare-order {
+    margin-top: .2rem;
+  }
+
+  //支付区域
+  .pay-block {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    padding-left: .3rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #FAFAFA;
+    border-top: 1px solid #DCDCDC;
+    z-index: 310;
+    font-size: .28rem;
+
+    .pay-money {
+      font-size: .42rem;
+      color: #F1503F;
+    }
+
+    .pay-btn {
+      height: 100%;
+      width: 2.28rem;
+      color: #fff;
+      background: #F1503F;
+      float: right;
+      font-size: .36rem;
+
+    }
+    .forbidClick {
+      background: #ccc!important;
+    }
+  }
+
+}

@@ -1,0 +1,56 @@
+@import '../../../../style/mixin.less';
+@import '../../../../style/color.less';
+.store-door{
+   margin-bottom:.1rem;
+   padding:.22rem .3rem;
+   background:#fff;
+   position: relative;
+   >div{
+     img{
+       width: 1.58rem;
+       height:1.14rem;
+       margin-right:.2rem;
+       border-radius: .04rem;
+       float:left;
+     }
+     .store-box {
+       overflow: hidden;
+     }
+     .storeName{
+      font-family:PingFangSC-Regular;
+      color: #333333;
+      line-height:.32rem;
+       margin-top:.05rem;
+       margin-bottom:.1rem;
+       font-size:.32rem;
+       .overflow();
+     }
+     .storeDetail{
+       padding-bottom: 0.05rem;
+       border-bottom: 0.01rem solid #F0F0F0;
+       margin-bottom:0.1rem;
+       margin-top: 0.35rem;
+       font-size: .24rem;
+       color:#999;
+       .pull-right{
+         width:2rem;
+         text-align: right;
+         .overflow();
+       }
+     }
+     .storeType{
+        margin-right:.2rem;
+     }
+   }
+   .order{
+      font-size: .47rem;
+      color: @colred;
+      padding: 0 2px;
+      border: 1px solid @colred;
+      border-radius: 2px;
+      display: inline-block;
+      position: absolute;
+      right: 1rem;
+      top: 1.4rem;
+   }
+}

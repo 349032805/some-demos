@@ -1,0 +1,129 @@
+@import '../../../style/mixin.less';
+.pos(@pos:absolute,@top:inherit,@right:inherit,@bottom:inherit,@left:inherit){
+    position: @pos;
+    top:@top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+.backdrop{
+    .pos(@pos:fixed, @top:0, @right:0, @bottom:0, @left:0);
+    background:rgba(0,0,0,.5);
+    z-index: 3;
+}
+ //左滑动动画
+.slideUp-enter-active,
+.slideUp-leave-active{
+    transition: all .5s;
+}
+
+.slideUp-enter,
+.slideUp-leave-active {
+    transform: translate3d(0, 100%, 0);
+}
+.cart-box{
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 300;
+    .backdrop{
+        z-index: 2;
+    }
+    .cart{
+        position: relative;
+        .flexboxCenter();
+        padding:.16rem .3rem;
+        overflow: hidden;
+        background-color:#fff;
+        box-shadow:0 0 1px 0 rgba(51,51,51,.35);
+        z-index: 4;
+        .cart-num-box{
+            .flexboxCenter();
+            >.img-box{
+                width:.82rem;
+                height:.82rem;
+                margin-right:.3rem;
+                position: relative;
+                >img{
+                    width:.82rem;
+                }
+                .num{
+                    .pos(@top:0, @right:-7px);
+                    padding: 1px 5px;
+                    border-radius: 15px;
+                    background-color: #FF4D4D;
+                    color: #fff;
+                    font-size: 13px;
+                }
+            }
+            >.box-price{
+                font-size: .32rem;
+                color: #9A9A9A;
+            }
+            
+        }
+        .no-dishes,
+        .price{
+            font-size: .32rem;
+            color: #9A9A9A;
+        }
+        .btn-primary{
+            .flexMiddle();
+            width:2.08rem;
+            height:.8rem;
+            line-height: .8rem;
+            line-height: .8rem;
+            font-size: .32rem;
+            border-radius: 4px;
+            background-color:#F1503F;
+            color:#fff;
+            text-align: center;
+            >.spinner{
+                margin-right:.1rem;
+            }
+        }
+        .btn-grey{
+            background-color: #ccc;
+        }
+        .price{
+            color:#333;
+        }
+        .favorable-price{
+            padding-left:3px;
+            color:#a9a9a9;
+            font-size:13px;
+            text-decoration: line-through;
+        }
+    }
+    .cart-list{
+        .pos(@top:initial, @right:0, @bottom:1.1rem, @left:0);
+        overflow:hidden;
+        z-index: 3;
+        .list-content{
+            position: relative;
+            max-height: 300px;
+            overflow: hidden;
+            background-color:#fff;
+            .btn-dish-box .btn-add-box{
+                background:url(../../../assets/mini-plus-minus.png) no-repeat center;
+                background-size:100%;
+                border:none;
+                height:24px;
+                line-height: 24px;
+                .btn-minus, 
+                .btn-plus{
+                    font-size: 0;
+                    opacity: 0;
+                }
+            }
+        }
+        .showDiv{
+            opacity: 1;
+        }
+    }
+}
+.mint-msgbox-confirm{
+    color:#06C1AE;
+}

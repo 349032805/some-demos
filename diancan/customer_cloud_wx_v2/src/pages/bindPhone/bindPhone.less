@@ -1,0 +1,92 @@
+@import '../../style/mixin.less';
+
+.bind-phone {
+  padding-top: 10px;
+  .outer {
+    background: #fff;
+    padding-left: 10px;
+
+      .row {
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        clear: both;
+        background: #fff;
+        padding-right: 15px;
+
+        input {
+          height: 100%;
+          width: 60%;
+          font-size: 16px;
+          float: left;
+        }
+
+        .send {
+          float: right;
+
+          button {
+            width: 94px;
+            height: 30px;
+            background: #F7F7F7;
+            border: 1px solid #C5C5C5;
+            font-size: 14px;
+            color: #323232;
+            border-radius: 3px;
+            margin-left: 12px;
+          }
+        }
+
+        .clear-icon {
+          width: 13px;
+          height: 13px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .sure-btn {
+      width: 92%;
+      height: 47px;
+      background: rgba(6,193,174,0.40);
+      border-radius: 4px;
+      font-size: 18px;
+      color: #fff;
+      display: block;
+      margin: 14px auto;
+
+      .loading-icon {
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+          margin-right: 5px;
+      }
+    }
+
+    .active-btn {
+      background: #06C1AE!important;
+    }
+
+    .message-box {
+      width: 162px;
+      height: 46px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -23px;
+      margin-left: -81px;
+      background: #fff;
+      border-radius: 4px;
+      z-index: 11;
+      color: #333;
+      text-align: center;
+      padding-top: 12px;
+
+        img {
+          width: 23px;
+          height: 23px;
+          vertical-align: bottom;
+          margin-right: 7px;
+        }
+    }
+
+}

@@ -1,0 +1,206 @@
+@import '../../style/mixin.less';
+
+.store-detail {
+  .anotherpage(300);
+  overflow: auto;
+  padding-bottom: .3rem;
+  .store-banner {
+    width: 100%;
+    height: 2.9rem;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+
+    .mask {
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.1);
+    }
+  }
+
+  .store-banner-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .favor{
+    position: absolute;
+    z-index: 10;
+  }
+  .share {
+    width: .36rem;
+    height: .3rem;
+    top: .24rem;
+    right: 1rem;
+  }
+
+  .collect {
+    width: .38rem;
+    height: .36rem;
+    top: .18rem;
+    right: .2rem;
+  }
+
+  .returnback {
+    width: .56rem;
+    height: .56rem;
+    left: .2rem;
+    top: .1rem;
+  }
+
+  .store-ban {
+    width: 100%;
+    height: 1.62rem;
+    background: #fff;
+    padding: 0 .3rem;
+
+    .store-logo {
+      width: 25%;
+      line-height: 1.62rem;
+      float: left;
+      border-radius: 4px;
+      background: #fff;
+
+      img {
+        width: 100%;
+        width: 1.58rem;
+        // width: auto;
+        height: 1.14rem;
+        border-radius: 4px;
+        vertical-align: middle;
+      }
+    }
+
+    .name-service {
+      float: left;
+      padding-left: .2rem;
+      padding-top: .28rem;
+      width: 75%;
+      .store-name {
+        font-size: .36rem;
+        color: #333;
+        line-height: .44rem;
+        margin-bottom: .2rem;
+      }
+      ul {
+        li {
+          float: left;
+          font-size: .26rem;
+          color: #666;
+          margin-right: .3rem;
+          line-height: .3rem;
+
+          i {
+            width: .3rem;
+            height: .3rem;
+            display: inline-block;
+            background: url('../../assets/service_tick.png') no-repeat;
+            background-size: 100% 100%;
+            // margin-right: 4px;
+            vertical-align: middle;
+            // position: relative;
+            // top: 2px;
+          }
+
+        }
+      }
+    }
+  }
+
+  .info-item {
+    background: #fff;
+    margin-top: .2rem;
+    clear: both;
+    .row {
+      width: 100%;
+      height: .9rem;
+      line-height: .9rem;
+      font-size: .28rem;
+      color: #666;
+      padding: 0 .3rem;
+       * {
+        display: inline-block;
+      }
+
+      .info-icon {
+        width: .4rem;
+        height: 100%;
+        .phone {
+          width: .26rem;
+          height: .26rem;
+          vertical-align: text-top;
+        }
+
+        .clock {
+          width: .28rem;
+          height: .28rem;
+          vertical-align: text-top;
+        }
+      }
+
+      .arrow {
+        width: .16rem;
+        height: .26rem;
+        vertical-align: middle;
+      }
+    }
+
+    .big-row {
+      font-size: .28rem;
+      color: #666;
+      padding: .2rem .3rem;
+
+      table {
+        width: 100%;
+      }
+
+     
+      .location {
+        width: .26rem;
+        height: .32rem;
+      }
+
+      .arrow {
+        width: .16rem;
+        height: .26rem;
+      }
+
+      .clock {
+        width: .28rem;
+        height: .28rem;
+        vertical-align: text-top;
+      }
+    }
+  }
+
+  .info {
+    background: #fff;
+    margin-top: .2rem;
+
+    .title {
+      height: 1rem;
+      line-height: 1rem;
+      font-size: .32rem;
+      color: #333;
+      padding-left: .2rem;
+    }
+    .item {
+      padding: 0 .2rem .22rem;
+      font-size: .28rem;
+      color: #666;
+    }
+
+    .intro {
+      padding: .2rem;
+      p {
+        font-size: .28rem;
+        color: #666;
+        line-height: .44rem;
+      }
+    }
+
+  }
+
+}
+

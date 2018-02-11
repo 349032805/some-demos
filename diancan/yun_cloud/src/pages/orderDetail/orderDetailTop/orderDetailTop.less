@@ -1,0 +1,68 @@
+@import '../../../style/color.less';
+header {
+    padding:.3rem;
+    background-image: -webkit-linear-gradient(-180deg, #FE4E4E 0%, #FE714E 100%);
+    background-image: linear-gradient(-180deg, #FE4E4E 0%, #FE714E 100%);
+    text-align: center;
+    .title{
+        .pull-left{
+            img{
+                width: .4rem;
+            }
+        }
+        .pull-right{
+            img{
+                width: .36rem;
+            }
+        }
+    }
+    h4{
+        font-weight: normal;
+        font-size: .26rem;
+        color: @colpink;
+    }
+    h1{
+        margin: .1rem 0;
+        font-size: .88rem;
+        font-weight: normal;
+        color: @colfff;
+    }
+    .status{
+        margin-bottom: .2rem;
+        font-size: .32rem;
+        color: @colfff;
+    }
+    .notes{
+        height: .62rem;
+        span{
+            display: inline-block;
+            margin-bottom: .25rem;
+            padding:0 .1rem;
+            font-size: .28rem;
+            color: @colpink;
+            img{
+                display: inline-block;
+                width: .35rem;
+                vertical-align: middle;
+            }
+        }
+    }
+    .header-btn-box{
+        a{
+            display: inline-block;
+            width:1.94rem;
+            height: .6rem;
+            margin: 0 .15rem;
+            line-height: .6rem;
+            background-color: rgba(255,255,255,0.08);
+            border: 1px solid @colfff;
+            color: @colpink;
+            border-radius: .04rem;
+            font-size: .28rem;
+        }
+        .fill-btn{
+            background-color: @colfff;
+            color:@colred;
+        }
+    }
+}

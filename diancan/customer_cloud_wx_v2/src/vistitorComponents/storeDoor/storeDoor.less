@@ -1,0 +1,47 @@
+@import '../../style/mixin.less';
+.storeDoor{
+  padding:2.7% 2.5%;
+   background:#fff;
+   position: relative;
+   width:100%;
+   overflow: hidden;
+   >div{
+     width:80%;
+     img{
+       width: 3.38rem;
+       height:2.43rem;
+       margin-right:.5rem;
+       border-radius: 2px;
+       float:left;
+     }
+     .storeBox {
+       float:right;
+     }
+     .storeName{
+       font-size:.68rem;
+       color:#333333;
+       .overflow();
+       line-height: 1.5rem;
+       width:8rem;
+     }
+     .storeDetail{
+       font-size: .57rem;
+       color:#B2B2B2;
+     }
+     .storeType{
+        margin-right:14px;
+        font-size: .51rem;
+     }
+   }
+   .order{
+    font-size: .47rem;
+    color: #00B3A1;
+    padding: 0 2px;
+    border: 1px solid #00B3A1;
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 1.4rem;
+   }
+}

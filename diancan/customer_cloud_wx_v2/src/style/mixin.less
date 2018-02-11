@@ -1,0 +1,33 @@
+.flex(@flexDirection:row;@justifyContent:space-between;@alignItem:center){
+  display: flex;
+  flex-direction:@flexDirection;
+  justify-content:@justifyContent ;
+  align-items:@alignItem ;
+}
+.wh(@width:100%;@height:100%){
+  width:@width;
+  height:@height;
+}
+
+.pos(@pos:absolute,@top:inherit,@right:inherit,@bottom:inherit,@left:inherit){
+    position: @pos;
+    top:@top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+.overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.anotherpage (@index) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f2f2f2;
+  z-index: @index;
+}
