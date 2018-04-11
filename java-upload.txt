@@ -1,0 +1,76 @@
+/**
+	 * 上传图片
+	 * */
+	@ResponseBody
+    @RequestMapping(value={"/admin/common/upload.do 
+
+"},method=RequestMethod.POST)
+    public ApiData uploadImg(HttpServletRequest request)throws Exception{
+		ApiData data=new ApiData();
+		boolean isMultipart=ServletFileUpload.isMultipartContent(request);
+		if (isMultipart) {
+			Map<String,String> object=new HashMap<>();
+			MultipartHttpServletRequest req = (MultipartHttpServletRequest) request; 
+			Map<String, MultipartFile> fileMap  = req.getFileMap();
+			if(!fileMap.isEmpty()) {
+				Map.Entry<String, MultipartFile> e = fileMap.entrySet().iterator().next(); 
+				MultipartFile file = e.getValue();
+				String dir = "";
+				switch (e.getKey()) {
+				case "thingPic":
+					dir ="/pic";
+
+				default:
+					break;
+				}
+				String suffix = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf("."));
+				String fileName=DateUtil.format(new Date(),DateUtil.DATE_FORMAT_TIMESSS)+suffix;
+				FileOutputStream fos = FileUtils.openOutputStream(new File(dir + fileName));
+				IOUtils.copy(file.getInputStream(), fos);
+				object.put("fileKey", e.getKey());
+				object.put("fileName", fileName);
+				data.setData(object);
+			}
+		}else {
+			data.setResult(0);
+			data.setMsg("不是一个真实的文件请求");
+		}
+        return data;
+    }
+    
+	/**
+	 * 图片访问
+	 */
+	@RequestMapping(value = "/common/img/{filename}/{type}/")
+	public void headImg(@PathVariable String filename,@PathVariable Integer type,
+			HttpServletRequest request, HttpServletResponse response) {
+		if (StringUtils.isEmpty(filename)||type==null)
+			return;
+		String pathString=path
+		File srcFile = new File(pathString + filename);
+		if (srcFile == null || !srcFile.exists())
+			return;
+		OutputStream out;
+		try {
+			out = response.getOutputStream();
+			byte[] b = FileUtils.readFileToByteArray(srcFile);
+			out.write(b);
+			out.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+    
+    /**
+	 * ueditor uploadServerURL
+	 * */
+	@RequestMapping(value= {"/admin/common/editor/serverURL"})
+    public void serverURL(String action,HttpServletRequest request,HttpServletResponse response)throws Exception{
+		 String rootPath = request.getSession().getServletContext().getRealPath("/");  
+         String exec = new ActionEnter(request, rootPath).exec();  
+         PrintWriter writer = response.getWriter();  
+         writer.write(exec);  
+         writer.flush();  
+         writer.close();  
+    }
