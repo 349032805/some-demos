@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .circle {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background: red;
+      border-radius: 50%;
+      position: fixed;
+      top: 100px;
+      left: 100px;
+      z-index: 100;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="circle" id="circle"></div>
+
+<script type="text/javascript">
+
+  var obj = document.getElementById('circle');
+  Drag(obj)
+
+  function Drag(obj) {
+    console.log()
+    obj.onmousedown = function (e) {
+      var This = this;
+      var l = e.clientX - this.parentNode.offsetLeft;
+      var t = e.clientY - this.parentNode.offsetTop;
+      var width = parseInt(document.documentElement.clientWidth) - 100;
+      var height = parseInt(document.documentElement.clientHeight) - 100;
+      document.onmousemove = function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        if (x >= width) {
+          x = width
+        }
+        if (y >= height) {
+          y = height
+        }
+        This.style.left = x + 'px';
+        This.style.top = y + 'px';
+      };
+      document.onmouseup = function (e) {
+        document.onmousemove = document.onmouseup = null;
+      }
+    }
+  }
+</script>
+
+
+</body>
+</html>
